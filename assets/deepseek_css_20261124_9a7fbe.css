@@ -1,0 +1,79 @@
+/* =====================================================================
+ * TV4 — Map Visualizer Styles
+ * ===================================================================== */
+
+/* Container */
+#map-container {
+    z-index: 0;
+    background: #f1f5f9;
+}
+
+/* ---------------- Airplane ---------------- */
+.plane-icon {
+    background: transparent !important;
+    border: none !important;
+}
+.plane-svg-wrap {
+    width: 34px;
+    height: 34px;
+    transform-origin: 50% 50%;
+    transition: transform 100ms linear;
+    filter: drop-shadow(0 3px 4px rgba(0, 0, 0, 0.35));
+    will-change: transform;
+}
+
+/* ---------------- Tooltips ---------------- */
+.graph-tooltip {
+    background: rgba(15, 23, 42, 0.95) !important;
+    color: #f1f5f9 !important;
+    border: 1px solid #334155 !important;
+    border-radius: 6px !important;
+    padding: 6px 10px !important;
+    font-size: 12px !important;
+    line-height: 1.5 !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25) !important;
+}
+.graph-tooltip::before {
+    border-top-color: rgba(15, 23, 42, 0.95) !important;
+}
+.graph-tooltip b { color: #67e8f9; }
+
+/* ---------------- Leaflet popup ---------------- */
+.leaflet-popup-content-wrapper {
+    border-radius: 10px !important;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15) !important;
+}
+.leaflet-popup-content {
+    margin: 12px 14px !important;
+}
+
+/* ---------------- Vertex markers ---------------- */
+.leaflet-interactive {
+    transition: fill 200ms ease, stroke 200ms ease, r 200ms ease;
+}
+
+/* ---------------- Legend (Bảng chú thích) ---------------- */
+.map-legend {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    background: rgba(255, 255, 255, 0.96);
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-size: 11px;
+    font-family: system-ui, sans-serif;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 500;
+    pointer-events: none;
+}
+.map-legend .lg-row {
+    display: flex; align-items: center; gap: 8px; margin: 3px 0;
+}
+.map-legend .lg-dot {
+    width: 12px; height: 12px; border-radius: 50%;
+    border: 2px solid #1e293b;
+}
+.map-legend .lg-line {
+    width: 18px; height: 3px; border-radius: 2px;
+}
