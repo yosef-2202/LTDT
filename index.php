@@ -2,7 +2,6 @@
 /**
  * THÀNH VIÊN 5: GIAO DIỆN ĐẶT VÉ, STEP PLAYER & BẢNG TRACE TABLE
  */
-?>
 <!DOCTYPE html>
 <html lang="vi">
 <head>
